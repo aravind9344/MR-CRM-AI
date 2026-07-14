@@ -1,110 +1,49 @@
-AI CRM HCP
-Overview
+# MR CRM AI 🤖🏥
 
-AI CRM HCP is an AI-powered Customer Relationship Management application designed for Medical Representatives to efficiently record Healthcare Professional (HCP) interactions.
+AI-powered CRM Assistant for Medical Representatives to capture and manage Healthcare Professional (HCP) interactions using Large Language Models.
 
-The application supports both structured form-based logging and conversational AI-based interaction logging using LangGraph and Groq LLM.
+## 🚀 Overview
 
-Features
-🤖 AI-powered interaction extraction
-💬 Conversational AI interface
-🎤 Voice-to-text support
-📝 Automatic CRM form filling
-✏️ AI conversational editing
-💾 Save interactions to PostgreSQL
-📚 Recent interaction history
-🔄 Automatic reset after save
-🏥 Medical Representative workflow
-Tech Stack
+MR CRM AI is an AI-first Healthcare CRM application that converts natural language doctor visit notes into structured CRM records.
 
-Frontend
+Medical representatives can simply describe their interaction with doctors through text, and the AI automatically extracts important details such as:
 
-React
-Redux Ready
-Tailwind CSS
+- HCP Name
+- Hospital
+- Specialty
+- Interaction Type
+- Discussion Notes
+- Follow-up Actions
 
-Backend
+This reduces manual CRM data entry and improves field productivity.
 
-FastAPI
-LangGraph
-Groq (gemma2-9b-it)
-SQLAlchemy
+---
 
-Database
+## ✨ Features
 
-PostgreSQL
-LangGraph Tools
-1. Log Interaction
+### 🤖 AI Interaction Extraction
+- Natural language understanding using LLM
+- Automatic CRM field extraction
+- Powered by LangGraph workflow
 
-Extracts structured CRM information from free-text conversations.
+### 🏥 HCP Interaction Management
+- Create doctor interaction records
+- Store visit details
+- Retrieve previous interactions
 
-2. Edit Interaction
+### 💬 AI Chat Interface
+- Conversational input support
+- Converts free text into structured JSON data
 
-Updates CRM fields using natural language.
+### 🗄️ Database Integration
+- PostgreSQL storage
+- SQLAlchemy ORM
 
-Example
+### 🎨 Modern Frontend
+- React based UI
+- Minimal CRM dashboard
+- Responsive design
 
-Change doctor name to Dr Ravi
-3. Summarize Interaction
+---
 
-Creates a concise summary of the meeting.
-
-Project Structure
-crm-assignment-aivoa
-
-backend/
-
-frontend/
-
-README.md
-Installation
-Backend
-cd backend
-
-python -m venv venv
-
-venv\Scripts\activate
-
-pip install -r requirements.txt
-
-uvicorn app.main:app --reload
-Frontend
-cd frontend
-
-npm install
-
-npm run dev
-Workflow
-Medical Representative
-
-↓
-
-Voice / Text
-
-↓
-
-LangGraph
-
-↓
-
-Groq LLM
-
-↓
-
-Extract CRM Fields
-
-↓
-
-Auto Fill Form
-
-↓
-
-Save Interaction
-
-↓
-
-PostgreSQL
-
-↓
-
-Recent History
+## 🏗️ Architecture
